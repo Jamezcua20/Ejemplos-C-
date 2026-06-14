@@ -11,7 +11,7 @@ Tu programa debe:
 4. Al final del ciclo, si el 'pesoTotal' supera las 50.5 toneladas, mostrar un 
    mensaje de alerta: "¡Peligro! Sobrecarga en la nave". Si no, mostrar: "Despegue seguro".
 
-REQUISITO: Mostrar el peso total final con 2 decimales.
+REQUISITO: Mostrar el peso total final con mínimo 2 decimales.
 */
 
 
@@ -32,8 +32,8 @@ int main (){
         cout<<"\nIngresar el peso del contenedor "<<i+1;
         cout<<" en kg: ";
         cin>>contenedor;
-        contenedor*=factor_ton;
-        peso_total+=contenedor;
+        contenedor*=factor_ton; // Ojo, en C tenemos abreviaturas para no poner x=x+y
+        peso_total+=contenedor; // Para usar las abreviaturas es x*=y,x/=y,x-=y, x+=y
         cout<<"\nPeso actual: "<<peso_total;
         cout<<" toneladas ";
     }
