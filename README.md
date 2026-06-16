@@ -21,5 +21,7 @@ Nos estamos viendo,
 Atte: Your Pal, The Mechanic.
 - **Ameeeezcua**
 
+
 **"Words of great encouragement." - Rocky 2026**
-<img width="860" height="860" alt="image" src="https://github.com/user-attachments/assets/da9a6af6-f28d-4831-9870-45864a22bab1" />
+
+https://www.youtube.com/watch?v=LQrKQVAQ_Q4&list=RDLQrKQVAQ_Q4&start_radio=1&t=2647s 
