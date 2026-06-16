@@ -22,3 +22,4 @@ Atte: Your Pal, The Mechanic.
 - **Ameeeezcua**
 
 **"Words of great encouragement." - Rocky 2026**
+<img width="860" height="860" alt="image" src="https://github.com/user-attachments/assets/da9a6af6-f28d-4831-9870-45864a22bab1" />
