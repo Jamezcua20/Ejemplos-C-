@@ -31,22 +31,16 @@ using namespace std;
 
 int main (){
     float total = 0, cafe = 2.50, dona = 1.50;
-    int selector=0, contador_cafe=0, contador_dona=0;
+    unsigned int selector=0, contador_cafe=0, contador_dona=0;
 
     //mensaje inicial
     printf("Bienvenido a la caferia, nuestros servicios son los siguientes: ");
 
-    while(1){
-        do{ //usamos do-while para validar la seleccion, nunca falta el chistoso
+    do{ //usamos do-while para validar la seleccion, nunca falta el chistoso
             printf("\n1. Comprar cafe. Precio: $2.50 USD\n2. Comprar dona. Precio: $1.50 USD.\n3. Ver total y salir");
             printf("\nQue desea realizar?: ");
             cin>>selector;
-            if(selector!=1 && selector !=2 && selector !=3)
-                printf("\nOpcion no disponible, intente de nuevo\n");
-        
-        }while(selector!=1 && selector !=2 && selector !=3);
 
-        //Una vez verificada la selección, procedemos a la compra
             switch(selector){
                 case 1:
                     total +=cafe;
@@ -60,12 +54,15 @@ int main (){
                     contador_dona++; // Para no hacer el x=x+1, se usa x++;
                     break;  
                 
-                default:
+                case 3:
                     printf("\nEl total sera de %.02f, %u cafes, %u donas", total, contador_cafe, contador_dona);
                     break;
+
+                default:
+                    printf("\nOpcion no disponible, intente de nuevo\n"); 
+                    break;   
             }
-            if(selector == 3)
-                break;
-    }
+
+    }while(selector !=3);
 
 }
