@@ -76,4 +76,13 @@ int main (){
    else
       printf("\nSistemas fallando!, apagado de emergencia activo");
 
+   printf("\nTemperaturas por celda del Reactor Arc:\n");
+
+   for(int j=0;j<4;j++){
+      for(int i=0;i<4;i++){
+         printf("[%0.2f] ",armadura[i][j]);
+      }
+      printf("\n");
+   }
+
 }
