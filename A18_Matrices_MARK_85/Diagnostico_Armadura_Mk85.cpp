@@ -80,7 +80,7 @@ int main (){
 
    for(int j=0;j<4;j++){
       for(int i=0;i<4;i++){
-         printf("[%0.2f] ",armadura[i][j]);
+         printf("[%0.2f] ",armadura[j][i]);
       }
       printf("\n");
    }
