@@ -92,11 +92,11 @@ int main(){
     }
 
     if(contador>0){
-        printf("\nAmenaza detectada, asteroirde %d es el mas peligroso\nMasa total: %0.2f Ton", more_dan, masa_asteroide[more_dan-1], distancia_tierra[more_dan-1]);
+        printf("\nAmenaza detectada, asteroirde %d es el mas peligroso\nMasa total: %0.2f Ton", more_dan, masa_asteroide[more_dan-1]);
         porcentaje = (contador*100.0)/6.0;
         printf("\nAmenazas detectadas: %d", contador);
-        printf("\nPorcentaje de asteroides que representan riesgo: %0.2f%\nAsteroide mas cercano: %d\nDistancia: %0.2f mil km",porcentaje, more_dan, distancia_tierra[more_dan-1]);
-    }   //Puede que por el IDE no compile si no lleva %%  aqui  -------|   
+        printf("\nPorcentaje de asteroides que representan riesgo: %0.2f%%\nAsteroide mas cercano: %d\nDistancia: %0.2f mil km",porcentaje, more_dan, distancia_tierra[more_dan-1]);
+    }   
 
     else
         printf("No se detectan amenzas importantes");
