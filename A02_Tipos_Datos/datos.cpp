@@ -8,7 +8,6 @@ int main() {
     float flotante = 15.24;
     double doble = 16.37455;
     char  caracter = 'a';
-
     cout<<caracter<<endl;
     return 0;
 }
