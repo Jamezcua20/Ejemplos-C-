@@ -12,3 +12,8 @@ int main() {
     cout<<caracter<<endl;
     return 0;
 }
+
+/*Para trabajar con microcontroladores, usualmente acostumbramos a priorizar el uso de memoria y usar tipo de datos
+uint8_t, int8_t, uint16_t, int16_t, etc, todo esto es por el uso de memoria, pero ahora que van comenzando, no deberían
+de tener problemas con los tipos de datos tradicionales.
+*/
