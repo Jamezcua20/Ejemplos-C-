@@ -64,6 +64,7 @@ int main (){
     system("cls");
     //Entrada simulada
     uint16_t trama_recibida = 0xB427;
+    uint16_t trama_enviada = 0x0000;
 
     //Fase 1
     //Comenzamos la fase 1 declarando las variables que usaremos para empaquetar individualmente
@@ -73,9 +74,25 @@ int main (){
     m_vuelo       =  (trama_recibida>>2) & 0x03;
     escudo        =  (trama_recibida>>1) & 0x01;
     t_aterrizaje  =  (trama_recibida>>0)  & 0x01;
-    printf("\n --- Hexadecimal --- \nNivel de empuje:0x%02x\nTemperatura Core: 0x%02x\nModo de vuelo: 0x%02x\nEscudo: 0x%02x\nTren de aterrizaje: 0x%02x",n_empuje,c_temp,m_vuelo,escudo,t_aterrizaje);
-    printf("\n --- Decimal --- \nNivel de empuje: %d\nTemperatura Core: %d\nModo de vuelo: %d\nEscudo: %d\nTren de aterrizaje:%d",n_empuje,c_temp,m_vuelo,escudo,t_aterrizaje);
-    
-   m_vuelo = (m_vuelo & 0x00) | (1 << 1); // Borra todo y enciende solo el bit 1 -> '10'
-   printf("\n --- Hexadecimal --- \nNivel de empuje:0x%02x\nTemperatura Core: 0x%02x\nModo de vuelo: 0x%02x\nEscudo: 0x%02x\nTren de aterrizaje: 0x%02x",n_empuje,c_temp,m_vuelo,escudo,t_aterrizaje);
-}
+    printf("\n --- REPORTE DE TELEMETRIA QUINJET ---");
+    printf("\n --- Hexadecimal --- \n \nNivel de empuje: 0x%02x\nTemperatura Core: 0x%02x\nModo de vuelo: 0x%02x\nEscudo: 0x%02x\nTren de aterrizaje: 0x%02x",n_empuje,c_temp,m_vuelo,escudo,t_aterrizaje);
+    printf("\n \n --- Decimal --- \nFase 1 (Desempaquetado Decimal): \nNivel de empuje: %d\nTemperatura Core: %d\nModo de vuelo: %d\nEscudo: %d\nTren de aterrizaje: %d",n_empuje,c_temp,m_vuelo,escudo,t_aterrizaje);
+   
+    //Fase 2
+    printf("\n\n Fase 2 (Aplicando Protocolos de Seguridad)...");
+    m_vuelo = (m_vuelo & 0x00) | (1 << 1); // Borra todo y enciende solo el bit 1 -> '10'
+    if(c_temp >= 60){
+      t_aterrizaje = (t_aterrizaje & 0x00);
+      printf("\n Temperatura critica detectada: %hhu C \n Retrayendo Tren de Aterrizaje. \n Cambiando Modo de Vuelo a: Sigilo (Stealth).",c_temp);
+    }
+
+   printf("\n\n Fase 3 (Reempaquetado Completo):");
+
+   trama_enviada |= ( n_empuje << 12) ;
+   trama_enviada |= ( c_temp << 4) ;
+   trama_enviada |= ( m_vuelo << 2) ;
+   trama_enviada |= ( escudo << 1);
+   trama_enviada |= ( t_aterrizaje << 0) ;
+   printf("\n --- Hexadecimal --- \nTrama enviada: 0x%04x", trama_enviada );
+
+   }
