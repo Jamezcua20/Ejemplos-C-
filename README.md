@@ -15,13 +15,13 @@ De igual manera, trataré de subirles algunas cosas útiles sobre microcontrolad
 * Alguno tiene que seguir mis pasos y no reprobar micro, y si es que todos reprueban, la neta voy a regresar al CIM solo para burlarme de ustedes.
 
 > **Pd:**
-> Y ya saben, si tienen dudas, allí esta chatgpto gemini, yo no les voy a contestar. Nah, cualquier cosa me avisan muchachos.
+> Y ya saben, si tienen dudas, allí esta chatgpt o gemini, yo no les voy a contestar. Nah, cualquier cosa me avisan muchachos.
 
 Nos estamos viendo,
 
 
 Atte: Your Pal, The Mechanic.   
-> *(Nah, eso sale en Ironman 3 XD, joyita infravalorada).*
+> *(Eso sale en Ironman 3 XD, joyita infravalorada).*
 
 
  * **Ameeeezcua**
