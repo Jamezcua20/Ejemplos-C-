@@ -32,12 +32,12 @@ Como ya deben de saber, la regla del OR dice que, cualquier cosa comparada contr
 
 Si ustedes toman una plantilla que tiene un `1` n la posición `3` y ceros en el resto, y le aplicar un `OR`, el regitro resultante quedaría como: 
 
-
-  1 0 0 0 0 0 0 0  (Tu registro original: ¡El motor 7 está encendido!)
-| 0 0 0 0 1 0 0 0  (Tu máscara: Quieres encender la casilla 3)
-
------------------
+```text
+  1 0 0 0 0 0 0 0 
+| 0 0 0 0 1 0 0 0 
+------------------
   1 0 0 0 1 0 0 0  (Resultado: La casilla 3 se encendió, ¡y el motor 7 sigue vivo!)
+```
 
 Esto suele ser confuso al comienzo, pero más adelante verán cómo se aplica mediante código y entenderán perfectamente todo el contexto.
 
@@ -51,10 +51,12 @@ Si buscamos apagar el interruptor 7, que si retomamos nuestro ejemplo anterior, 
 
 Aplicamos el filtro `AND`
 
-  1 0 0 0 1 0 0 0  (Tu registro: Casilla 7 y 3 encendidas)
-& 0 1 1 1 1 1 1 1  (Tu máscara protectora: Cero en el 7, unos en los demás)
+```text
+  1 0 0 0 1 0 0 0  (Registro: Casilla 7 y 3 encendidas)
+& 0 1 1 1 1 1 1 1  (Máscara protectora: Cero en el 7, unos en los demás)
 -----------------
   0 0 0 0 1 0 0 0  (Resultado: El motor 7 se apagó, pero la casilla 3 sobrevivió)
+```
 
 ## Operadores AND (&) solo -> Sirve exlusivamente para LEER
 
