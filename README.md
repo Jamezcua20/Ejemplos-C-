@@ -1,6 +1,6 @@
 # Programación en C
 
-**Si están leyendo esto, es porque ya egresé y claro que no los iba a dejar sin guía.** 
+**Si están leyendo esto, es porque ya egresé y claro que no los iba a dejar sin ayuda**, no por nada Sofi dice que me van a seguir fichando a su equipo aún egresado. 
 
 Aquí encontrarán el material necesario para cuando estén en sexto semestre. Usualmente cuando uno recién entra a microcontroladores se le da un repaso completo a cómo programar en **C**; aquí les dejaré desde un simple `Hello World` hasta punteros (si es que me alcanza el tiempo).
 
