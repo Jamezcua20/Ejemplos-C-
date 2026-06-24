@@ -35,6 +35,7 @@ Si ustedes toman una plantilla que tiene un `1` n la posición `3` y ceros en el
 
   1 0 0 0 0 0 0 0  (Tu registro original: ¡El motor 7 está encendido!)
 | 0 0 0 0 1 0 0 0  (Tu máscara: Quieres encender la casilla 3)
+
 -----------------
   1 0 0 0 1 0 0 0  (Resultado: La casilla 3 se encendió, ¡y el motor 7 sigue vivo!)
 
