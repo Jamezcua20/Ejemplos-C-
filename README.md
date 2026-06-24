@@ -10,7 +10,7 @@ De igual manera, trataré de subirles algunas cosas útiles sobre microcontrolad
 
 ## Recomendaciones
 
-* **Mucho ánimo y éxito en lo que se viene, muchachos.**
+* **Mucho ánimo y éxito en lo que se viene muchachos.**
 * Recuerden, **no hagan la de: "Si dejo todo al último minuto, solo me tomará un minuto hacerlo"**, definitivamente, es lo peor que pueden hacer.
 * Alguno tiene que seguir mis pasos y no reprobar micro, y si es que todos reprueban, la neta voy a regresar al CIM solo para burlarme de ustedes.
 
