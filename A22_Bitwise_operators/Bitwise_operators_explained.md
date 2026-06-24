@@ -1,6 +1,6 @@
 Para comprender lo que son las operaciones de bits, necesariamente deben tener conocimiento sobre lógica o sistemas binarios. Con lo que se les ha dejado en ejemplos anteriores sería suficiente para que puedan desarrollar sus prácticas de microcontroladores; pero si quieren ir aprendiendo cómo es que se hacen realmente las cosas, pasemos al siguiente nivel.
 
-Dentro de la memoria RAM de un microcontrolador no existen los números. Lo único que hay sin cajas con interruptores eléctricos.
+Dentro de la memoria RAM de un microcontrolador no existen los números. Lo único que hay son cajas con interruptores eléctricos.
 
 Una variable de tipo `uint8_t` (un byte) es, literalmente, una caja que contiene 8 interuptores mecánicos alineados de derecha a izquierda.
 * Si el interuptor está apagado (0v), el microcontrolador lee un 0.
@@ -14,11 +14,11 @@ Los interruptores se numeran estrictamente de derecha a izquierda, empezando por
 
 Cuando tú en C dices `uint8_t registro = 0;`, fisicamente le estás diciendo al chip: "Asegúrate que los 8 interruptores de la cada estén apagados".
 
-Si tú estuvieras programando una computaodra normal y quisieras cambiar el valor de una variable, harías esto: registro = 5;. La computadora borra los 8 interruptores de golpe y acomoda los bits para que sumen 5 (00000101).
+Si ustedes estuvieran programando una computaodra normal y quisieran cambiar el valor de una variable, harían esto: registro = 5;. La computadora borra los 8 interruptores de golpe y acomoda los bits para que sumen 5 (00000101).
 
-Ahora, se deben de estar preguntando, ¿esto por qué no se debe de hacer con microcontroladores?. Bueno, imaginemos por un momento que el interruptor 7 controla el motor que estabiliza un avión por ejemplo, y supongamos que el interruptor 0 controla un Led indicador. Si el motor está encendido (10000000) y le escriben registro ? 5; para encender el Led, van a terminar apagando el motor del avión, y el avión terminaría cayendo.
+Ahora, se deben de estar preguntando, ¿esto por qué no se debe de hacer con microcontroladores?. Bueno, imaginemos por un momento que el interruptor 7 controla el motor que estabiliza un avión por ejemplo, y supongamos que el interruptor 0 controla un Led indicador. Si el motor está encendido (10000000) y le escriben registro = 5; para encender el Led, van a terminar apagando el motor del avión, y el avión terminaría cayendo.
 
-Las operaciones Bitwise nacieron por una sola razón, modificar o leer un interruptor especifico de la caja, sin alterar o orrar cualquiera de sus números vecinos.
+Las operaciones Bitwise nacieron por una sola razón, modificar o leer un interruptor especifico de la caja, sin alterar o borrar cualquiera de sus números vecinos.
 
 ## ¿Cómo usamos las máscaras?
 
