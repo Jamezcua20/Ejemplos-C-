@@ -11,8 +11,8 @@ De igual manera, trataré de subirles algunas cosas útiles sobre microcontrolad
 ## Recomendaciones
 
 * **Mucho ánimo y éxito en lo que se viene, muchachos.**
-* Recuerden **no hagan la de "Si dejo todo al último minuto, solo me tomará un minuto hacerlo"**.
-* Alguno tiene que seguir mis pasos y no reprobar micro, si ya todos lo reprueban la neta nomás voy a regresar al CIM para burlarme de ustedes.
+* Recuerden **no** hagan la de: "Si dejo todo al último minuto, solo me tomará un minuto hacerlo", definitivamente, es lo peor que pueden hacer.
+* Alguno tiene que seguir mis pasos y no reprobar micro, y si es que todos reprueban la neta voy a regresar al CIM para burlarme de ustedes.
 
 > **Pd:**
 > Y ya saben, si tienen dudas, allí esta chatgpt, yo no les voy a contestar. Nah, cualquier cosa me avisan muchachos.
@@ -20,7 +20,7 @@ De igual manera, trataré de subirles algunas cosas útiles sobre microcontrolad
 Nos estamos viendo,
 
 
-Atte: Your Pal, The Mechanic.
+Atte: Your Pal, The Mechanic. (Es referencia a Ironman 3, joyita infravalorada).
 
 - **Ameeeezcua**
 
@@ -29,5 +29,3 @@ Atte: Your Pal, The Mechanic.
 
 https://youtu.be/lSClSNsCidg?si=gkw24yHQcbvYE29U&t=77
 
-
-https://i.pinimg.com/originals/28/12/e4/2812e464653af81e21ce0f2f4e7cf072.jpg
