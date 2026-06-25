@@ -104,6 +104,6 @@ No les puedo poner videos de subway surfers a los lados o historias con ASMR, pe
 * Quiero FILTRAR SOLO EL BIT X y BORRAR TODO lo demás de golpe: 
   registro &= (1 << X);  <-- ¡Ojo! Sin usar el símbolo '~'
 ===================================================================
-´´´
+```
 
-Esto suele ser confuso al comienzo, pero más adelante verán cómo se aplica mediante código y entenderán perfectamente todo el contexto.
+* **Esto suele ser confuso al comienzo, pero más adelante verán cómo se aplica mediante código y entenderán perfectamente todo el contexto.**
