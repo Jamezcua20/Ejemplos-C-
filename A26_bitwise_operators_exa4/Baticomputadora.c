@@ -51,22 +51,33 @@ Imprime en la pantalla de la terminal el valor final del registro re_amenaza en 
 #include <stdlib.h>
 
 int main (){
-    
+
+    system("cls");
+
     uint8_t RE_AMENAZA = 0x8A;
+
+    printf("--- BAT-COMPUTADORA: SISTEMA DE DIAGNOSTICO ---\n");
 
     // Fase 1: Análisis Diagnóstico
     if(RE_AMENAZA &((1<<7)|(1<<6)))
         printf("\nRiesgo biologico detectado: Se requiere el Bat-traje con filtro NBQ (Nuclear, Biologico, Quimico).");
 
-    if(RE_AMENAZA &((1<<1)&(1<<2)))
+    uint8_t mascara_emboscada = (1 << 1) | (1 << 2);
+    if((RE_AMENAZA & mascara_emboscada) == mascara_emboscada)
         printf("\nSituación de rehenes, comunicaciones caidas, posible emboscada, tener precaución");
     
     // Fase 2: Modificación de Bits
-
+    //a)
     RE_AMENAZA |= (1<<3);
-    printf("\n 0x%02x", RE_AMENAZA);
+    
+    //b)
     RE_AMENAZA &= ~(1<<4);
-    printf("\n 0x%02x", RE_AMENAZA);
 
+    //c)
+    RE_AMENAZA ^= (1<<0);
+    RE_AMENAZA ^= (1<<0);
+
+    //Fase 3: Reporte hexadecimal.
+    printf("\nRegistro obtenido: 0x%02x", RE_AMENAZA);
 
 }
