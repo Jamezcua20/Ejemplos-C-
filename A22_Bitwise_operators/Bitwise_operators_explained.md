@@ -82,8 +82,28 @@ Cuando tú escribes un 1, por defecto ese 1 nace en la casilla más a la derecha
 
 No les puedo poner videos de subway surfers a los lados o historias con ASMR, pero en resumen:
 
-* Quiero ENCENDER el bit X: registro |= (1 << X);
-* Quiero APAGAR el bit X: registro &= ~(1 << X);
-* Quiero PREGUNTAR (saber) si el bit X está encendido: if (registro & (1 << X))
+```text
+===================================================================
+             GUÍA RÁPIDA DE OPERACIONES BITWISE EN C
+===================================================================
+* Quiero ENCENDER el bit X (Sin alterar vecinos): 
+  registro |= (1 << X);
+
+* Quiero APAGAR el bit X (Sin alterar vecinos): 
+  registro &= ~(1 << X);
+
+* Quiero PREGUNTAR si el bit X está encendido: 
+  if (registro & (1 << X))
+
+* Quiero INVERTIR / TOGGLE el bit X (Interruptor): 
+  registro ^= (1 << X);
+
+* Quiero BORRAR TODO el registro completo (Forzar a 0): 
+  registro &= 0x00;
+
+* Quiero FILTRAR SOLO EL BIT X y BORRAR TODO lo demás de golpe: 
+  registro &= (1 << X);  <-- ¡Ojo! Sin usar el símbolo '~'
+===================================================================
+´´´
 
 Esto suele ser confuso al comienzo, pero más adelante verán cómo se aplica mediante código y entenderán perfectamente todo el contexto.
