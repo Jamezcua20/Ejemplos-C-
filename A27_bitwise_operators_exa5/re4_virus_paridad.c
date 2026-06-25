@@ -37,7 +37,7 @@ Tu Misión (Requerimientos Técnicos):
    b) Con un condicional 'if' usando el operador módulo '%', verifica si la cuenta de unos es 
       un número par. Si es par, significa que los datos se corrompieron en el bus o la Plaga los alteró. 
       Imprime en pantalla: "[ERROR]: Datos corruptos o interferencia parasitaria. Inyector Bloqueado." 
-      y finaliza el programa inmediatamente con un `return 0;`.
+      y finaliza el programa inmediatamente con un `return 0;`. Una vez validado, ajusta el valor del Bit 0.
    *Tip de validación:* Para el valor 0xCE, los bits del 1 al 7 tienen exactamente cinco '1s' (1100111). 
    Como 5 es impar, tu validación debe pasar con éxito y continuar el programa.
 
