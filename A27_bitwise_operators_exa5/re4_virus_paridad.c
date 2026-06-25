@@ -106,7 +106,7 @@ int main (){
     // Fase 3: Liberación del Antídoto
     printf("\nLiberando Antigeno...");
     reg_medico &= ~((1 << 7) | (1 << 6)); 
-    if(reg_medico & ((1<<6)&(1<<7)))
+    if ((reg_medico & ((1 << 7) | (1 << 6))) == 0)
             printf("\nNivel de mutacion revertido a normal."); 
 
     reg_medico &= ~(1<<1);
