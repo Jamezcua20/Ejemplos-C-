@@ -107,3 +107,42 @@ No les puedo poner videos de subway surfers a los lados o historias con ASMR, pe
 ```
 
 * **Esto suele ser confuso al comienzo, pero más adelante verán cómo se aplica mediante código y entenderán perfectamente todo el contexto.**
+
+NOTA: CUANDO QUEREMOS DIVIDIR UN NUMERO BINARIO A LA MITAD, SOLO TENEMOS QUE RECORRERLO UN BIT A LA IZQUIERDA.
+Cada casilla en binario tiene un peso que es una potencia de 2 ($1, 2, 4, 8, 16, 32, 64, 128$). Cuando desplazas un bit a la derecha, lo estás obligando a mudarse a una casilla que vale exactamente la mitad de la casilla en la que estaba.
+
+Bits con su peso:    128  64  32  16   8   4   2   1
+Estado inicial:       0   0   0    0   1   1   0   0   --> (8 + 4 = 12 decimal)
+
+Bits desplazados:     128  64  32  16   8   4   2   1
+Estado final:          0   0    0   0   0   1   1   0   --> (4 + 2 = 6 decimal)
+
+### El Truco Infalible: Dominar Hexadecimales con la Regla "8-4-2-1"
+
+Para convertir cualquier binario a Hexadecimal (`0x`) sin romperte la 
+cabeza, solo debes recordar una regla de oro: **Divide el byte en 
+grupos de 4 bits (llamados Nibbles) y aplícales el peso 8-4-2-1.**
+
+Cada bit en un grupo de 4 tiene un valor decimal fijo si está 
+encendido (`1`):
+* El primer bit (izquierda) vale **8**
+* El segundo bit vale **4**
+* El tercer bit vale **2**
+* El cuarto bit (derecha) vale **1**
+
+---
+
+#### Tu ejemplo: `0111 0100`
+
+* **Primer grupo (`0111`):** ¿Tiene 8? No (`0`). ¿Tiene 4? Sí (`1`). ¿Tiene 2? Sí (`1`). 
+  ¿Tiene 1? Sí (`1`).
+  *Suma los que tienen "Sí":* $4 + 2 + 1 = \mathbf{7}$
+
+* **Segundo grupo (`0100`):**
+  ¿Tiene 8? No (`0`). ¿Tiene 4? Sí (`1`). ¿Tiene 2? No (`0`). 
+  ¿Tiene 1? No (`0`).
+  *Suma los que tienen "Sí":* $\mathbf{4}$
+
+  **Resultado final:** `0x74`
+
+---
