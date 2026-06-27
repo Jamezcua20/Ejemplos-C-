@@ -109,6 +109,7 @@ No les puedo poner videos de subway surfers a los lados o historias con ASMR, pe
 * **Esto suele ser confuso al comienzo, pero más adelante verán cómo se aplica mediante código y entenderán perfectamente todo el contexto.**
 
 NOTA: CUANDO QUEREMOS DIVIDIR UN NUMERO BINARIO A LA MITAD, SOLO TENEMOS QUE RECORRERLO UN BIT A LA IZQUIERDA.
+
 Cada casilla en binario tiene un peso que es una potencia de 2 ($1, 2, 4, 8, 16, 32, 64, 128$). Cuando desplazas un bit a la derecha, lo estás obligando a mudarse a una casilla que vale exactamente la mitad de la casilla en la que estaba.
 
 Bits con su peso:    128  64  32  16   8   4   2   1
