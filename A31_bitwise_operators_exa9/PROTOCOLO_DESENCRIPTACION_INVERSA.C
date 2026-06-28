@@ -69,12 +69,14 @@ int main (){
 
      // Fase 1
     if(necrosis == 0x00){
-        printf("\nEstado critico: No se puede continuar");
+        
         if(cepa == 0x07){
             printf("\nTipo de cepa admisible");
-    }
-        else
+        }
+        else{
+            printf("\nEstado critico: No se puede continuar");
             return 0;
+        }
     }
 
     else{
