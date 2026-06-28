@@ -1,14 +1,15 @@
-// Este código muestra los tipos de datos existentes
-
-#include <iostream>
-using namespace std;
+#include <stdio.h>
 
 int main() {
-    int  entero = 15;
+    int entero = 15;
     float flotante = 15.24;
     double doble = 16.37455;
-    char  caracter = 'a';
-    cout<<caracter<<endl;
+    char caracter = 'a';
+    
+    // En C usamos printf con %c para imprimir un solo carácter
+    // El '\n' hace la función del 'endl' (salto de línea)
+    printf("%d | %.2f | %.5lf | %c\n", entero, flotante, doble, caracter);
+    
     return 0;
 }
 
