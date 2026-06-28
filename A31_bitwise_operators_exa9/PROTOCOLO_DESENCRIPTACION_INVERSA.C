@@ -60,7 +60,7 @@ int main (){
     cepa = (nemesis_payload>>1) & 0X07;
     necrosis = nemesis_payload & 0X01;
     carga_inmun = (nemesis_payload>>11) & 0X1F;
-    estabilizacion_huesp = (nemesis_payload>>4) & 0x7F; //revisar estabilización, valor raro
+    estabilizacion_huesp = (nemesis_payload>>4) & 0x7F;
 
     // Conteo 
     int8_t contador = 0x00;
