@@ -70,7 +70,7 @@ if (falla_temp == true || falla_voltaje == true) { ... }
 
 ---
 
-## RESUMEN DE COMPARACORES
+## RESUMEN DE COMPARADORES
 
 Aquí tienen el acordeón de los operadores que pueden meter dentro de los paréntesis de su if:
 
