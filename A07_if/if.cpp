@@ -8,22 +8,21 @@ si el cliente es un niño menor de 12 años o un adulto mayor de 60 años,
 
 */
 
-#include <iostream>
-using namespace std;
+#include <stdio.h>
 
     int main(){
         int cliente = 0, entrada = 7, edad_nino = 12, edad_adulto = 60, descuento1= 50, descuento2=20;
         float pagar = 0;
-        cout<<"Entradas de cine \n";
-        cout<<"Ingrese la edad del cliente: ";
-        cin>>cliente;
+        printf("Entradas de cine \n");
+        printf("Ingrese la edad del cliente: ");
+        scanf("%d", &cliente);
 
         if(cliente<edad_nino || cliente>edad_adulto){
-            cout << "\nFelicidades, Aplica para el descuento del 50%";
+            printf("\nFelicidades, Aplica para el descuento del 50%%");
             pagar = entrada-((descuento1*entrada)/100.0);
         }
         else if(cliente>edad_nino && cliente <18){
-            cout << "\nFelicidades, Aplica para el descuento del 20%";
+            printf("\nFelicidades, Aplica para el descuento del 20%%");
             pagar = entrada-((descuento2*entrada)/100.0);
         }
 
@@ -31,6 +30,8 @@ using namespace std;
         pagar = entrada;
         
 
-        cout<<"\nEl precio a pagar es: "<<pagar;
-        cout<<" dolares";
+        printf("\nEl precio a pagar es: %.2f", pagar);
+        printf(" dolares\n");
+        
+        return 0;
     }
