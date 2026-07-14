@@ -21,7 +21,7 @@ Nos estamos viendo,
 
 
 Atte: Your Pal, The Mechanic.   
-> *(Eso sale en Ironman 3 XD, joyita infravalorada).*
+> *(Eso sale en Ironman 3, joyita infravalorada).*
 
 
  * **Ameeeezcua**
